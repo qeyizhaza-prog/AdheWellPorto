@@ -1,0 +1,42 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #064E3B;
+  --color-brand-deeper: #043427;
+  --color-brand-vibrant: #059669;
+  --color-brand-light: #10B981;
+  --color-brand-gold: #C5A059;
+  --color-brand-gold-light: #E8D4A2;
+  --color-brand-alabaster: #F8FAF9;
+  --color-brand-charcoal: #111827;
+
+  --font-display: "Oswald", sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-body);
+    scroll-behavior: smooth;
+  }
+}
+
+.bg-radial-luxury {
+  background-color: #FFFFFF;
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(5, 150, 105, 0.05) 0%, transparent 45%),
+    radial-gradient(circle at 90% 75%, rgba(197, 160, 89, 0.06) 0%, transparent 40%),
+    radial-gradient(circle at 50% 90%, rgba(6, 78, 59, 0.04) 0%, transparent 50%);
+}
+
+.portrait-fade-mask {
+  -webkit-mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 66%, rgba(0, 0, 0, 0) 97%);
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1) 66%, rgba(0, 0, 0, 0) 97%);
+}
+
+.hero-title-clamp {
+  font-size: clamp(2.65rem, 6.6vw, 6.25rem);
+  line-height: 0.92;
+  letter-spacing: -0.02em;
+  text-wrap: balance;
+}

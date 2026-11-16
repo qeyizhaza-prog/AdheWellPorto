@@ -1,0 +1,680 @@
+<!DOCTYPE html><html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Adhe Wellington — IT Specialist &amp; Holistic Healer</title>
+<!-- Tailwind CSS CDN with Forms & Container Queries -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Google Fonts: Oswald (Editorial Condensed Display) & Plus Jakarta Sans (Clean Modern Sans) -->
+<link href="https://fonts.googleapis.com" rel="preconnect">
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&amp;family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&amp;display=swap" rel="stylesheet">
+<!-- FontAwesome for standard UI icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+<!-- Tailwind Configuration -->
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#064E3B',       /* Deep Luxury Emerald */
+              deeper: '#043427',     /* Ultra Deep Pine Emerald */
+              vibrant: '#059669',    /* Vibrant Highlight Emerald */
+              light: '#10B981',      /* Soft Mint Green */
+              gold: '#C5A059',       /* Refined Champagne Gold */
+              goldLight: '#E8D4A2',  /* Soft Gold Accent */
+              alabaster: '#F8FAF9',  /* Crisp Off-White */
+              charcoal: '#111827',   /* Deep Charcoal Body Text */
+            }
+          },
+          fontFamily: {
+            display: ['Oswald', 'sans-serif'],
+            body: ['Plus Jakarta Sans', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+<!-- BEGIN: Custom Styles -->
+<style data-purpose="ambient-lighting">
+    /* Subtle radial glow representing healing energy & precise focus */
+    .bg-radial-luxury {
+      background-color: #FFFFFF;
+      background-image: 
+        radial-gradient(circle at 10% 20%, rgba(5, 150, 105, 0.05) 0%, transparent 45%),
+        radial-gradient(circle at 90% 75%, rgba(197, 160, 89, 0.06) 0%, transparent 40%),
+        radial-gradient(circle at 50% 90%, rgba(6, 78, 59, 0.04) 0%, transparent 50%);
+    }
+  </style>
+<style data-purpose="portrait-masking">
+    /* Bottom fade mask for hero portrait to seamlessly blend with large headline */
+    .portrait-fade-mask {
+      -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 68%, rgba(0,0,0,0) 97%);
+      mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 68%, rgba(0,0,0,0) 97%);
+    }
+  </style>
+<style data-purpose="typography-enhancements">
+    /* Massive impactful tight line-height typography */
+    .hero-title-clamp {
+      font-size: clamp(2.75rem, 6.8vw, 6.5rem);
+      line-height: 0.92;
+      letter-spacing: -0.02em;
+    }
+  </style>
+<!-- END: Custom Styles -->
+</head>
+<body class="bg-brand-alabaster text-brand-charcoal font-body antialiased selection:bg-brand-vibrant selection:text-white">
+<!-- BEGIN: TopBarNav -->
+<!-- Top persistent luxury navigation bar with status pill & brandmark -->
+<header class="sticky top-0 z-50 backdrop-blur-md bg-white/90 border-b border-emerald-950/5 transition-all duration-300">
+<div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+<!-- Brand Logo / Monogram -->
+<a class="group flex items-center gap-3" href="#">
+<div class="w-10 h-10 rounded-lg bg-brand-dark text-brand-gold flex items-center justify-center font-display text-xl font-bold border border-brand-gold/30 shadow-sm group-hover:scale-105 transition-transform">
+          AW
+        </div>
+<div class="flex flex-col">
+<span class="font-display tracking-widest text-lg font-bold text-brand-dark group-hover:text-brand-vibrant transition-colors">ADHE WELLINGTON</span>
+<span class="text-[10px] tracking-wider uppercase font-semibold text-emerald-700/80 -mt-1">IT Architect • Holistic Healer</span>
+</div>
+</a>
+<!-- Availability Status Badge -->
+<div class="hidden md:flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-xs font-medium text-brand-dark">
+<span class="w-2 h-2 rounded-full bg-brand-vibrant animate-pulse"></span>
+<span>Accepting Select IT Architecture &amp; Healing Sessions</span>
+</div>
+<!-- Quick Nav Action Links -->
+<div class="flex items-center gap-6 text-sm font-medium">
+<nav class="hidden lg:flex items-center gap-6 text-emerald-900/80">
+<a class="hover:text-brand-vibrant transition-colors" href="#hero">Vision</a>
+<a class="hover:text-brand-vibrant transition-colors" href="#dual-persona">Dual-Persona CV</a>
+<a class="hover:text-brand-vibrant transition-colors" href="#portfolio">Portfolio</a>
+<a class="hover:text-brand-vibrant transition-colors" href="#contact">Contact</a>
+</nav>
+<a class="inline-flex items-center gap-2 px-4 py-2 text-xs uppercase tracking-wider font-semibold rounded-md bg-brand-dark text-white hover:bg-brand-vibrant transition-all shadow-sm hover:shadow-emerald-900/10" href="#contact">
+<span>Book Session</span>
+<i class="fa-solid fa-arrow-right text-[10px]"></i>
+</a>
+</div>
+</div>
+</header>
+<!-- END: TopBarNav -->
+<main class="bg-radial-luxury overflow-hidden">
+<!-- BEGIN: HeroSection -->
+<!-- Recreating exact 3-column asymmetric editorial layout from reference image with emerald palette -->
+<section class="relative min-h-[calc(100vh-5rem)] flex flex-col justify-between pt-6 pb-12 lg:pt-10 lg:pb-16 px-4 sm:px-6 lg:px-12 max-w-[1440px] mx-auto" id="hero">
+<!-- Asymmetric 3-Column Top Grid -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start relative z-10">
+<!-- Left Column: Social Stack with Icon Square Badges -->
+<div class="lg:col-span-3 flex lg:flex-col flex-wrap gap-2.5 pt-4 order-2 lg:order-1">
+<!-- Item 1: LinkedIn (Active Highlighted in Emerald) -->
+<a class="group flex items-center gap-3 p-1.5 pr-4 rounded-lg bg-emerald-50 border border-emerald-300 text-brand-vibrant hover:bg-emerald-100/70 transition-all w-fit" href="https://linkedin.com" rel="noopener noreferrer" target="_blank">
+<span class="w-8 h-8 rounded-md bg-brand-vibrant text-white flex items-center justify-center text-sm shadow-sm group-hover:scale-105 transition-transform">
+<i class="fa-brands fa-linkedin-in"></i>
+</span>
+<span class="font-display font-semibold tracking-wider text-xs uppercase text-brand-dark group-hover:text-brand-vibrant">
+              LINKEDIN
+            </span>
+</a>
+<!-- Item 2: GitHub / Portfolio -->
+<a class="group flex items-center gap-3 p-1.5 pr-4 rounded-lg bg-white/80 border border-slate-200/80 hover:border-emerald-300 text-slate-800 hover:text-brand-dark hover:bg-emerald-50/50 transition-all w-fit" href="https://github.com" rel="noopener noreferrer" target="_blank">
+<span class="w-8 h-8 rounded-md bg-brand-dark text-white flex items-center justify-center text-sm group-hover:bg-brand-vibrant transition-colors">
+<i class="fa-brands fa-github"></i>
+</span>
+<span class="font-display font-semibold tracking-wider text-xs uppercase text-slate-700 group-hover:text-brand-dark">
+              GITHUB / IT REPO
+            </span>
+</a>
+<!-- Item 3: Instagram (Mindful Healer & Daily) -->
+<a class="group flex items-center gap-3 p-1.5 pr-4 rounded-lg bg-white/80 border border-slate-200/80 hover:border-emerald-300 text-slate-800 hover:text-brand-dark hover:bg-emerald-50/50 transition-all w-fit" href="https://instagram.com" rel="noopener noreferrer" target="_blank">
+<span class="w-8 h-8 rounded-md bg-brand-dark text-white flex items-center justify-center text-sm group-hover:bg-brand-vibrant transition-colors">
+<i class="fa-brands fa-instagram"></i>
+</span>
+<span class="font-display font-semibold tracking-wider text-xs uppercase text-slate-700 group-hover:text-brand-dark">
+              INSTAGRAM
+            </span>
+</a>
+<!-- Item 4: WhatsApp Direct Booking -->
+<a class="group flex items-center gap-3 p-1.5 pr-4 rounded-lg bg-white/80 border border-slate-200/80 hover:border-emerald-300 text-slate-800 hover:text-brand-dark hover:bg-emerald-50/50 transition-all w-fit" href="https://wa.me/" rel="noopener noreferrer" target="_blank">
+<span class="w-8 h-8 rounded-md bg-brand-dark text-white flex items-center justify-center text-sm group-hover:bg-brand-vibrant transition-colors">
+<i class="fa-brands fa-whatsapp"></i>
+</span>
+<span class="font-display font-semibold tracking-wider text-xs uppercase text-slate-700 group-hover:text-brand-dark">
+              WHATSAPP
+            </span>
+</a>
+<!-- Item 5: Direct Email -->
+<a class="group flex items-center gap-3 p-1.5 pr-4 rounded-lg bg-white/80 border border-slate-200/80 hover:border-emerald-300 text-slate-800 hover:text-brand-dark hover:bg-emerald-50/50 transition-all w-fit" href="mailto:adhe.wellington@example.com">
+<span class="w-8 h-8 rounded-md bg-brand-dark text-white flex items-center justify-center text-sm group-hover:bg-brand-vibrant transition-colors">
+<i class="fa-solid fa-envelope"></i>
+</span>
+<span class="font-display font-semibold tracking-wider text-xs uppercase text-slate-700 group-hover:text-brand-dark">
+              INQUIRY EMAIL
+            </span>
+</a>
+</div>
+<!-- Center Column: Studio Portrait with subtle bottom fade -->
+<div class="lg:col-span-6 flex flex-col items-center justify-center relative order-1 lg:order-2">
+<!-- Soft Background Aura Behind Subject -->
+<div class="absolute inset-0 max-w-sm mx-auto h-[460px] bg-gradient-to-t from-emerald-200/40 via-emerald-100/20 to-transparent rounded-full blur-3xl -z-10 pointer-events-none"></div>
+<!-- Hero Portrait Container with Bottom Fade Effect -->
+<div class="relative w-full max-w-[420px] aspect-[3/4] flex items-end justify-center">
+<img alt="Adhe Wellington — IT Specialist &amp; Holistic Healer" class="portrait-fade-mask object-cover object-top w-full h-full drop-shadow-xl select-none" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBNtXLCTX_mLXc8ujoXXWUMObx6A2NZ4gMGEb4otv50yEobTCpvLD7JUtdKuZmsOQiw53TYzwRWuzyab1ylq0Meaxcj-eof3e7x86O4MLr3x0c31GSDRtceXJbaORReXyjgLWz6rEWuY0z2QR_9ia6Of_IZOm7dD7r4jvQ1ptqIfpULChMUwUoWRtxCODUZWnGNSO9sJUVKw-bf0L1HLx5ngnxznK_qfjUGgWxZekrhcGLDtUYZk589JA">
+<!-- Asset Verification Badge as requested in PRD -->
+<div class="absolute top-2 right-2 backdrop-blur-md bg-white/80 border border-emerald-300/60 rounded-full px-3 py-1 shadow-sm flex items-center gap-1.5 text-[11px] font-semibold text-brand-dark">
+<i class="fa-solid fa-circle-check text-brand-vibrant"></i>
+<span>Adhe Wellington</span>
+</div>
+</div>
+</div>
+<!-- Right Column: Editorial Value Proposition & Connect Button -->
+<div class="lg:col-span-3 flex flex-col items-start lg:items-start pt-4 order-3">
+<div class="space-y-4 max-w-xs">
+<div class="w-8 h-0.5 bg-brand-gold"></div>
+<p class="text-sm md:text-base leading-relaxed text-slate-700 font-normal">
+              From architecting resilient enterprise IT systems to guiding holistic energy healing, I bridge technical precision with mindful transformation.
+            </p>
+<!-- Primary Connect Pill Button (Deep Emerald with white text & icon block) -->
+<div class="pt-2">
+<a class="inline-flex items-center gap-4 bg-brand-dark hover:bg-brand-deeper text-white pl-6 pr-2.5 py-2.5 rounded-xl shadow-lg shadow-emerald-950/20 border border-emerald-700/40 group transition-all duration-300" href="#contact">
+<span class="font-display uppercase tracking-widest text-base font-semibold">Connect</span>
+<span class="w-8 h-8 rounded-lg bg-emerald-800/80 border border-brand-gold/60 text-brand-goldLight flex items-center justify-center group-hover:bg-brand-vibrant group-hover:text-white transition-colors">
+<i class="fa-regular fa-envelope"></i>
+</span>
+</a>
+</div>
+<!-- Mini credentials label -->
+<div class="pt-4 border-t border-slate-200/70 text-xs text-slate-500 space-y-1">
+<div class="flex items-center gap-1.5">
+<i class="fa-solid fa-code text-brand-vibrant text-[10px]"></i>
+<span>Enterprise Cloud, AI &amp; Infrastructure</span>
+</div>
+<div class="flex items-center gap-1.5">
+<i class="fa-solid fa-spa text-brand-gold text-[10px]"></i>
+<span>Certified Energy Healer &amp; Mindfulness Guide</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Massive Central Headline (Overlapping bottom of portrait as in visual reference) -->
+<div class="mt-6 lg:-mt-14 z-20 text-center pointer-events-none">
+<h1 class="hero-title-clamp font-display font-bold uppercase tracking-tight text-brand-dark leading-none">
+<span class="text-brand-vibrant">I ENGINEER,</span> HEAL, AND<br class="hidden sm:inline">
+<span class="text-brand-dark">BRING BALANCE TO LIFE.</span>
+</h1>
+</div>
+</section>
+<!-- END: HeroSection -->
+<!-- BEGIN: DualPersonaSwitcher -->
+<!-- Interactive Dual-Niche Tab Switcher & Resume Explorer -->
+<section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-emerald-950/10" id="dual-persona">
+<!-- Section Title & Narrative -->
+<div class="text-center max-w-3xl mx-auto mb-14">
+<span class="text-xs uppercase tracking-widest font-bold text-brand-vibrant bg-emerald-100/60 px-3 py-1 rounded-full border border-emerald-200">
+          The Convergence of Logic &amp; Vitality
+        </span>
+<h2 class="font-display text-4xl sm:text-5xl font-bold uppercase text-brand-dark mt-4 tracking-tight">
+          Two Callings. One Integrated Vision.
+        </h2>
+<p class="text-slate-600 mt-3 text-base leading-relaxed">
+          Technology requires analytical clarity and rigorous design. Healing requires empathy and balanced flow. Explore both dimensions of my practice below.
+        </p>
+<!-- Interactive Tab Switcher -->
+<div class="inline-flex p-1.5 bg-emerald-900/10 rounded-2xl mt-8 border border-emerald-200">
+<button class="px-6 py-3 rounded-xl font-display uppercase tracking-wider text-sm font-bold transition-all duration-300 bg-brand-dark text-white shadow-md" id="tab-btn-it" onclick="switchPersona('it')">
+<i class="fa-solid fa-terminal mr-2 text-brand-light"></i>
+            IT &amp; Technology Architect
+          </button>
+<button class="px-6 py-3 rounded-xl font-display uppercase tracking-wider text-sm font-bold transition-all duration-300 text-slate-700 hover:text-brand-dark" id="tab-btn-healer" onclick="switchPersona('healer')">
+<i class="fa-solid fa-leaf mr-2 text-brand-gold"></i>
+            Holistic Energy Healer
+          </button>
+</div>
+</div>
+<!-- PERSONA CONTENT: IT SPECIALIST -->
+<div class="transition-opacity duration-300" id="content-it">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- IT Column 1: Core Competencies -->
+<div class="bg-white p-8 rounded-2xl border border-emerald-100 shadow-sm hover:border-emerald-300 transition-all">
+<div class="w-12 h-12 rounded-xl bg-emerald-50 text-brand-vibrant flex items-center justify-center text-xl mb-6">
+<i class="fa-solid fa-network-wired"></i>
+</div>
+<h3 class="font-display text-2xl font-bold uppercase text-brand-dark">Systems &amp; Architecture</h3>
+<p class="text-slate-600 text-sm mt-2 leading-relaxed">
+              Designing fault-tolerant backend architectures, microservices orchestration, and secure cloud frameworks that scale effortlessly.
+            </p>
+<div class="mt-6 flex flex-wrap gap-2">
+<span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 text-slate-700 font-medium">AWS / GCP</span>
+<span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 text-slate-700 font-medium">Kubernetes</span>
+<span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 text-slate-700 font-medium">Terraform</span>
+<span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 text-slate-700 font-medium">Zero Trust Security</span>
+</div>
+</div>
+<!-- IT Column 2: Fullstack & Data Engine -->
+<div class="bg-white p-8 rounded-2xl border border-emerald-100 shadow-sm hover:border-emerald-300 transition-all">
+<div class="w-12 h-12 rounded-xl bg-emerald-50 text-brand-vibrant flex items-center justify-center text-xl mb-6">
+<i class="fa-solid fa-laptop-code"></i>
+</div>
+<h3 class="font-display text-2xl font-bold uppercase text-brand-dark">Fullstack Engineering</h3>
+<p class="text-slate-600 text-sm mt-2 leading-relaxed">
+              Crafting end-to-end digital web platforms, API ecosystems, and modern UI solutions with clean, maintainable code standards.
+            </p>
+<div class="mt-6 flex flex-wrap gap-2">
+<span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 text-slate-700 font-medium">TypeScript</span>
+<span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 text-slate-700 font-medium">Next.js / Node</span>
+<span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 text-slate-700 font-medium">PostgreSQL</span>
+<span class="px-2.5 py-1 text-xs rounded-md bg-slate-100 text-slate-700 font-medium">Tailwind CSS</span>
+</div>
+</div>
+<!-- IT Column 3: Corporate Impact & Downloads -->
+<div class="bg-gradient-to-br from-brand-dark to-brand-deeper p-8 rounded-2xl text-white shadow-xl flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-brand-vibrant/40 text-brand-light text-xs font-semibold uppercase tracking-wider mb-4">
+                Enterprise Experience
+              </div>
+<h3 class="font-display text-2xl font-bold uppercase">10+ Years Technical Leadership</h3>
+<p class="text-emerald-100/80 text-sm mt-2 leading-relaxed">
+                Consulted for high-growth tech ventures, fintech platforms, and established enterprises needing robust digital transformation.
+              </p>
+</div>
+<div class="pt-6">
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-white text-brand-dark font-display uppercase tracking-wider text-sm font-bold hover:bg-emerald-50 transition-colors shadow" href="#contact">
+<i class="fa-solid fa-file-arrow-down text-brand-vibrant"></i>
+<span>Download IT Resume (PDF)</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+<!-- PERSONA CONTENT: HOLISTIC HEALER -->
+<div class="hidden transition-opacity duration-300" id="content-healer">
+<div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+<!-- Healer Column 1: Energy & Chakra Alignment -->
+<div class="bg-white p-8 rounded-2xl border border-emerald-100 shadow-sm hover:border-emerald-300 transition-all">
+<div class="w-12 h-12 rounded-xl bg-amber-50 text-brand-gold flex items-center justify-center text-xl mb-6">
+<i class="fa-solid fa-hand-holding-heart"></i>
+</div>
+<h3 class="font-display text-2xl font-bold uppercase text-brand-dark">Energy Alignment</h3>
+<p class="text-slate-600 text-sm mt-2 leading-relaxed">
+              Gentle biofield assessment and subtle energy clearing to dissolve somatic blockages, fatigue, and restore innate vital balance.
+            </p>
+<div class="mt-6 flex flex-wrap gap-2">
+<span class="px-2.5 py-1 text-xs rounded-md bg-emerald-50 text-brand-dark font-medium">Reiki Master</span>
+<span class="px-2.5 py-1 text-xs rounded-md bg-emerald-50 text-brand-dark font-medium">Pranic Harmonization</span>
+<span class="px-2.5 py-1 text-xs rounded-md bg-emerald-50 text-brand-dark font-medium">Chakra Tuning</span>
+</div>
+</div>
+<!-- Healer Column 2: Mindful Stress & Breathwork -->
+<div class="bg-white p-8 rounded-2xl border border-emerald-100 shadow-sm hover:border-emerald-300 transition-all">
+<div class="w-12 h-12 rounded-xl bg-amber-50 text-brand-gold flex items-center justify-center text-xl mb-6">
+<i class="fa-solid fa-wind"></i>
+</div>
+<h3 class="font-display text-2xl font-bold uppercase text-brand-dark">Breath &amp; Sound Healing</h3>
+<p class="text-slate-600 text-sm mt-2 leading-relaxed">
+              Neurological reset through intentional conscious breathing, Tibetan singing bowl resonance, and grounding guided meditation.
+            </p>
+<div class="mt-6 flex flex-wrap gap-2">
+<span class="px-2.5 py-1 text-xs rounded-md bg-emerald-50 text-brand-dark font-medium">Pranayama</span>
+<span class="px-2.5 py-1 text-xs rounded-md bg-emerald-50 text-brand-dark font-medium">Vagus Nerve Reset</span>
+<span class="px-2.5 py-1 text-xs rounded-md bg-emerald-50 text-brand-dark font-medium">Sound Baths</span>
+</div>
+</div>
+<!-- Healer Column 3: Corporate Wellness Sessions -->
+<div class="bg-gradient-to-br from-brand-dark via-emerald-900 to-teal-950 p-8 rounded-2xl text-white shadow-xl flex flex-col justify-between">
+<div>
+<div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-400/20 text-brand-goldLight text-xs font-semibold uppercase tracking-wider mb-4">
+                Executive &amp; Personal Care
+              </div>
+<h3 class="font-display text-2xl font-bold uppercase">Restoring Equilibrium</h3>
+<p class="text-emerald-100/80 text-sm mt-2 leading-relaxed">
+                Specialized programs for high-performing professionals and executives seeking mental calm, burnout recovery, and emotional resilience.
+              </p>
+</div>
+<div class="pt-6">
+<a class="w-full inline-flex items-center justify-center gap-2 py-3 px-4 rounded-xl bg-brand-gold text-brand-dark font-display uppercase tracking-wider text-sm font-bold hover:bg-amber-300 transition-colors shadow" href="#contact">
+<i class="fa-solid fa-calendar-check"></i>
+<span>Reserve 1-on-1 Sanctuary Session</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- END: DualPersonaSwitcher -->
+<!-- BEGIN: SelectedPortfolio -->
+<!-- Selected Projects & Holistic Programs with dynamic filter -->
+<section class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-emerald-950/10" id="portfolio">
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="text-xs uppercase tracking-widest font-bold text-brand-vibrant">Selected Engagements</span>
+<h2 class="font-display text-4xl sm:text-5xl font-bold uppercase text-brand-dark tracking-tight mt-1">
+            Featured Works &amp; Impact
+          </h2>
+</div>
+<!-- Filter Tags -->
+<div class="flex items-center gap-2 mt-6 md:mt-0">
+<button class="filter-btn px-4 py-2 rounded-lg text-xs uppercase tracking-wider font-bold bg-brand-dark text-white" data-filter="all" onclick="filterPortfolio('all')">All</button>
+<button class="filter-btn px-4 py-2 rounded-lg text-xs uppercase tracking-wider font-bold bg-white text-slate-700 border border-slate-200 hover:border-brand-vibrant" data-filter="it" onclick="filterPortfolio('it')">IT Systems</button>
+<button class="filter-btn px-4 py-2 rounded-lg text-xs uppercase tracking-wider font-bold bg-white text-slate-700 border border-slate-200 hover:border-brand-vibrant" data-filter="healing" onclick="filterPortfolio('healing')">Holistic Care</button>
+</div>
+</div>
+<!-- Portfolio Grid with Thin Emerald Borders (#D1FAE5) -->
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Card 1 (IT) -->
+<article class="portfolio-item group bg-white rounded-2xl p-7 border border-[#D1FAE5] shadow-sm hover:shadow-xl hover:border-brand-vibrant/40 transition-all duration-300 flex flex-col justify-between" data-category="it">
+<div>
+<div class="flex items-center justify-between text-xs mb-4">
+<span class="px-2.5 py-1 rounded bg-emerald-50 text-brand-dark font-semibold uppercase tracking-wider">Enterprise Cloud</span>
+<span class="text-slate-400 font-mono">2025</span>
+</div>
+<h3 class="font-display text-2xl font-bold uppercase text-brand-dark group-hover:text-brand-vibrant transition-colors">
+              High-Availability FinTech Core Engine
+            </h3>
+<p class="text-slate-600 text-sm mt-3 leading-relaxed">
+              Architected a distributed event-driven payment processing infrastructure supporting 99.999% uptime with sub-50ms latency.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-brand-dark font-semibold">
+<span>Result: Zero Outages / 1M+ Txn/day</span>
+<i class="fa-solid fa-arrow-up-right-from-square text-brand-vibrant group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+</div>
+</article>
+<!-- Card 2 (Healing) -->
+<article class="portfolio-item group bg-white rounded-2xl p-7 border border-[#D1FAE5] shadow-sm hover:shadow-xl hover:border-brand-vibrant/40 transition-all duration-300 flex flex-col justify-between" data-category="healing">
+<div>
+<div class="flex items-center justify-between text-xs mb-4">
+<span class="px-2.5 py-1 rounded bg-amber-50 text-amber-900 font-semibold uppercase tracking-wider">Mindful Recovery</span>
+<span class="text-slate-400 font-mono">2026</span>
+</div>
+<h3 class="font-display text-2xl font-bold uppercase text-brand-dark group-hover:text-brand-vibrant transition-colors">
+              Executive De-Stress &amp; Vitality Retreat
+            </h3>
+<p class="text-slate-600 text-sm mt-3 leading-relaxed">
+              Facilitated multi-day somatic energy harmonizing and breathwork retreats for C-level founders experiencing acute fatigue.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-brand-dark font-semibold">
+<span>Result: 84% Stress Reduction Index</span>
+<i class="fa-solid fa-arrow-up-right-from-square text-brand-vibrant group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+</div>
+</article>
+<!-- Card 3 (IT) -->
+<article class="portfolio-item group bg-white rounded-2xl p-7 border border-[#D1FAE5] shadow-sm hover:shadow-xl hover:border-brand-vibrant/40 transition-all duration-300 flex flex-col justify-between" data-category="it">
+<div>
+<div class="flex items-center justify-between text-xs mb-4">
+<span class="px-2.5 py-1 rounded bg-emerald-50 text-brand-dark font-semibold uppercase tracking-wider">AI Integration</span>
+<span class="text-slate-400 font-mono">2025</span>
+</div>
+<h3 class="font-display text-2xl font-bold uppercase text-brand-dark group-hover:text-brand-vibrant transition-colors">
+              Healthcare Data Pipeline &amp; LLM Automation
+            </h3>
+<p class="text-slate-600 text-sm mt-3 leading-relaxed">
+              Designed secure HIPAA-compliant vector retrieval system for automated medical research document summarization.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-brand-dark font-semibold">
+<span>Result: 70% Time-to-Insight Boost</span>
+<i class="fa-solid fa-arrow-up-right-from-square text-brand-vibrant group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+</div>
+</article>
+<!-- Card 4 (Healing) -->
+<article class="portfolio-item group bg-white rounded-2xl p-7 border border-[#D1FAE5] shadow-sm hover:shadow-xl hover:border-brand-vibrant/40 transition-all duration-300 flex flex-col justify-between" data-category="healing">
+<div>
+<div class="flex items-center justify-between text-xs mb-4">
+<span class="px-2.5 py-1 rounded bg-amber-50 text-amber-900 font-semibold uppercase tracking-wider">Energy Clinic</span>
+<span class="text-slate-400 font-mono">Ongoing</span>
+</div>
+<h3 class="font-display text-2xl font-bold uppercase text-brand-dark group-hover:text-brand-vibrant transition-colors">
+              1-on-1 Energy Realignment Clinic
+            </h3>
+<p class="text-slate-600 text-sm mt-3 leading-relaxed">
+              Personalized bio-field cleansing, sound therapy, and chakra balancing sessions conducted in person and remotely.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-brand-dark font-semibold">
+<span>Result: Over 450+ Sessions Held</span>
+<i class="fa-solid fa-arrow-up-right-from-square text-brand-vibrant group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+</div>
+</article>
+<!-- Card 5 (IT) -->
+<article class="portfolio-item group bg-white rounded-2xl p-7 border border-[#D1FAE5] shadow-sm hover:shadow-xl hover:border-brand-vibrant/40 transition-all duration-300 flex flex-col justify-between" data-category="it">
+<div>
+<div class="flex items-center justify-between text-xs mb-4">
+<span class="px-2.5 py-1 rounded bg-emerald-50 text-brand-dark font-semibold uppercase tracking-wider">Modern Web</span>
+<span class="text-slate-400 font-mono">2026</span>
+</div>
+<h3 class="font-display text-2xl font-bold uppercase text-brand-dark group-hover:text-brand-vibrant transition-colors">
+              Luxury Lifestyle &amp; Wellness Platform
+            </h3>
+<p class="text-slate-600 text-sm mt-3 leading-relaxed">
+              Custom headless e-commerce and member booking portal built with Next.js, Stripe, and edge-rendered microservices.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-brand-dark font-semibold">
+<span>Result: Lighthouse Score 99/100</span>
+<i class="fa-solid fa-arrow-up-right-from-square text-brand-vibrant group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+</div>
+</article>
+<!-- Card 6 (Healing & Tech Cross-discipline) -->
+<article class="portfolio-item group bg-white rounded-2xl p-7 border border-[#D1FAE5] shadow-sm hover:shadow-xl hover:border-brand-vibrant/40 transition-all duration-300 flex flex-col justify-between" data-category="healing">
+<div>
+<div class="flex items-center justify-between text-xs mb-4">
+<span class="px-2.5 py-1 rounded bg-emerald-100 text-brand-dark font-semibold uppercase tracking-wider">Mind-Tech Lab</span>
+<span class="text-slate-400 font-mono">2026</span>
+</div>
+<h3 class="font-display text-2xl font-bold uppercase text-brand-dark group-hover:text-brand-vibrant transition-colors">
+              Binaural Soundwave Generator
+            </h3>
+<p class="text-slate-600 text-sm mt-3 leading-relaxed">
+              Engineered an interactive browser-based theta frequency generator for instant desk-side relaxation and deep state meditation.
+            </p>
+</div>
+<div class="pt-6 mt-6 border-t border-slate-100 flex items-center justify-between text-xs text-brand-dark font-semibold">
+<span>Result: 25k+ Active Listeners</span>
+<i class="fa-solid fa-arrow-up-right-from-square text-brand-vibrant group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform"></i>
+</div>
+</article>
+</div>
+</section>
+<!-- END: SelectedPortfolio -->
+<!-- BEGIN: BookingAndContactSection -->
+<!-- Smart consultation inquiry form and vCard / QR asset block -->
+<section class="py-24 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto border-t border-emerald-950/10" id="contact">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<!-- Left Side: Narrative & QR Code Asset Card -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<span class="text-xs uppercase tracking-widest font-bold text-brand-vibrant bg-emerald-100/60 px-3 py-1 rounded-full border border-emerald-200">
+              Initiate Contact
+            </span>
+<h2 class="font-display text-4xl sm:text-5xl font-bold uppercase text-brand-dark mt-4 tracking-tight">
+              Let's Build or Restore Harmony.
+            </h2>
+<p class="text-slate-600 mt-4 leading-relaxed text-sm sm:text-base">
+              Whether you need senior technical consulting for your digital infrastructure or a restorative 1-on-1 holistic healing session, I am at your service.
+            </p>
+<!-- Quick Direct Contacts -->
+<div class="mt-8 space-y-4">
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-emerald-50 text-brand-vibrant flex items-center justify-center text-base border border-emerald-200">
+<i class="fa-solid fa-envelope"></i>
+</div>
+<div>
+<div class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Email Directly</div>
+<a class="text-sm font-bold text-brand-dark hover:text-brand-vibrant transition-colors" href="mailto:adhe.wellington@example.com">adhe.wellington@example.com</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<div class="w-10 h-10 rounded-xl bg-emerald-50 text-brand-vibrant flex items-center justify-center text-base border border-emerald-200">
+<i class="fa-brands fa-whatsapp"></i>
+</div>
+<div>
+<div class="text-xs uppercase tracking-wider text-slate-500 font-semibold">Instant WhatsApp / Booking</div>
+<a class="text-sm font-bold text-brand-dark hover:text-brand-vibrant transition-colors" href="https://wa.me/">+62 (812) 8800-WELLINGTON</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Digital Card with QR Graphic Provided in Dataset -->
+<div class="mt-8 p-5 bg-white rounded-2xl border border-emerald-200/80 shadow-sm flex items-center gap-5">
+<div class="w-24 h-24 rounded-xl overflow-hidden flex-shrink-0 border border-brand-gold/40 shadow-inner">
+<img alt="Adhe Wellington Digital vCard QR Code" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBYyke3cQ8mlS_i6CKOe2Nc6pvXjZJIBmRYNYxS5t8ZqTvqmp88WyqRdDTu_r7chlpCtHZluToozGPYIGc_P8e8F7o8YFA-DIsqdbrU2pNw_NEOihE4o0_lmoyAlweAcTaaelLIX985M5g0cxWPQCoeGFtQjbkI-IcqIScTe-OB5e3FyGSGi9Ehy34YDi_EPcXWL1wNsedMOSLEDhYnbgsoOt3zQu3ROmCS4oVHWqWpceB3kjPdjaf0FA">
+</div>
+<div>
+<span class="text-[10px] font-bold tracking-widest uppercase bg-amber-50 text-brand-gold px-2 py-0.5 rounded border border-amber-200">Scan to Connect</span>
+<h4 class="font-display font-bold uppercase text-brand-dark text-base mt-1">Digital vCard &amp; Direct Line</h4>
+<p class="text-xs text-slate-500 mt-1">Scan using your phone's camera to save contacts directly to your device.</p>
+</div>
+</div>
+</div>
+<!-- Right Side: Dual-Objective Interactive Consultation Form -->
+<div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-emerald-200/90 shadow-xl relative">
+<h3 class="font-display text-2xl font-bold uppercase text-brand-dark mb-2">Send an Inquiry</h3>
+<p class="text-xs text-slate-500 mb-6">Select your primary area of interest to ensure the swiftest response.</p>
+<form class="space-y-5" onsubmit="handleFormSubmit(event)">
+<!-- Objective Selector -->
+<div>
+<label class="block text-xs uppercase tracking-wider font-bold text-slate-700 mb-2">Service Orientation *</label>
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+<label class="flex items-center gap-3 p-3.5 rounded-xl border border-emerald-200 cursor-pointer hover:bg-emerald-50/50 has-[:checked]:bg-emerald-50 has-[:checked]:border-brand-vibrant">
+<input checked="" class="text-brand-vibrant focus:ring-brand-vibrant" name="service_type" type="radio" value="it">
+<div>
+<span class="block text-xs font-bold text-brand-dark uppercase">IT Architecture / Tech</span>
+<span class="block text-[11px] text-slate-500">Consulting, hiring, or dev contracts</span>
+</div>
+</label>
+<label class="flex items-center gap-3 p-3.5 rounded-xl border border-emerald-200 cursor-pointer hover:bg-emerald-50/50 has-[:checked]:bg-emerald-50 has-[:checked]:border-brand-vibrant">
+<input class="text-brand-vibrant focus:ring-brand-vibrant" name="service_type" type="radio" value="healer">
+<div>
+<span class="block text-xs font-bold text-brand-dark uppercase">Holistic Healing Session</span>
+<span class="block text-[11px] text-slate-500">1-on-1 realignment or corporate wellness</span>
+</div>
+</label>
+</div>
+</div>
+<!-- Name and Email -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-xs uppercase tracking-wider font-semibold text-slate-700 mb-1.5" for="contact-name">Your Name *</label>
+<input class="w-full text-sm rounded-xl border-slate-200 focus:border-brand-vibrant focus:ring-brand-vibrant py-2.5 px-3.5" id="contact-name" placeholder="e.g. Adrian Prasetya" required="" type="text">
+</div>
+<div>
+<label class="block text-xs uppercase tracking-wider font-semibold text-slate-700 mb-1.5" for="contact-email">Email Address *</label>
+<input class="w-full text-sm rounded-xl border-slate-200 focus:border-brand-vibrant focus:ring-brand-vibrant py-2.5 px-3.5" id="contact-email" placeholder="name@company.com" required="" type="email">
+</div>
+</div>
+<!-- Subject / Project Overview -->
+<div>
+<label class="block text-xs uppercase tracking-wider font-semibold text-slate-700 mb-1.5" for="contact-subject">Subject / Engagement Summary</label>
+<input class="w-full text-sm rounded-xl border-slate-200 focus:border-brand-vibrant focus:ring-brand-vibrant py-2.5 px-3.5" id="contact-subject" placeholder="e.g. Cloud Modernization Project / Energy Consultation" type="text">
+</div>
+<!-- Message Body -->
+<div>
+<label class="block text-xs uppercase tracking-wider font-semibold text-slate-700 mb-1.5" for="contact-message">Message / Details *</label>
+<textarea class="w-full text-sm rounded-xl border-slate-200 focus:border-brand-vibrant focus:ring-brand-vibrant py-2.5 px-3.5" id="contact-message" placeholder="Share your timeline, current obstacles, or specific wellness needs..." required="" rows="4"></textarea>
+</div>
+<!-- Submit Button with Feedback Toast -->
+<button class="w-full py-3.5 px-6 rounded-xl bg-brand-dark hover:bg-brand-deeper text-white font-display uppercase tracking-widest text-sm font-bold shadow-lg shadow-emerald-950/20 border border-brand-gold/40 flex items-center justify-center gap-3 group transition-all" type="submit">
+<span>Send Message</span>
+<i class="fa-solid fa-paper-plane text-xs text-brand-gold group-hover:translate-x-1 transition-transform"></i>
+</button>
+<div class="hidden text-center text-xs font-semibold text-brand-vibrant py-2 bg-emerald-50 rounded-lg border border-emerald-200" id="form-feedback">
+              Thank you! Your message has been prepared for Adhe Wellington. We will respond within 24 hours.
+            </div>
+</form>
+</div>
+</div>
+</section>
+<!-- END: BookingAndContactSection -->
+</main>
+<!-- BEGIN: MainFooter -->
+<!-- Clean luxury editorial footer adhering to the deep emerald and gold accents -->
+<footer class="bg-brand-deeper text-white border-t border-emerald-900 py-12 px-4 sm:px-6 lg:px-8">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
+<!-- Brand & Tagline -->
+<div class="flex items-center gap-3">
+<div class="w-8 h-8 rounded bg-brand-dark text-brand-gold flex items-center justify-center font-display text-sm font-bold border border-brand-gold/30">
+          AW
+        </div>
+<div>
+<span class="font-display tracking-widest text-sm font-bold uppercase text-white">ADHE WELLINGTON</span>
+<p class="text-[11px] text-emerald-300/70">Bridging Technological Precision &amp; Holistic Mindfulness</p>
+</div>
+</div>
+<!-- Quick Social Icons -->
+<div class="flex items-center gap-4 text-emerald-200/80">
+<a class="hover:text-brand-light transition-colors" href="https://linkedin.com" rel="noopener noreferrer" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin text-lg"></i></a>
+<a class="hover:text-brand-light transition-colors" href="https://github.com" rel="noopener noreferrer" target="_blank" title="GitHub"><i class="fa-brands fa-github text-lg"></i></a>
+<a class="hover:text-brand-light transition-colors" href="https://instagram.com" rel="noopener noreferrer" target="_blank" title="Instagram"><i class="fa-brands fa-instagram text-lg"></i></a>
+<a class="hover:text-brand-light transition-colors" href="https://wa.me/" rel="noopener noreferrer" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp text-lg"></i></a>
+</div>
+<!-- Copyright -->
+<div class="text-xs text-emerald-400/60">
+        © 2026 Adhe Wellington. All Rights Reserved. Luxury Editorial Portfolio.
+      </div>
+</div>
+</footer>
+<!-- END: MainFooter -->
+<!-- BEGIN: InteractiveScripts -->
+<!-- Tab switching & portfolio filtering scripts -->
+<script data-purpose="persona-tab-switcher">
+    function switchPersona(persona) {
+      const itContent = document.getElementById('content-it');
+      const healerContent = document.getElementById('content-healer');
+      const itBtn = document.getElementById('tab-btn-it');
+      const healerBtn = document.getElementById('tab-btn-healer');
+
+      if (persona === 'it') {
+        itContent.classList.remove('hidden');
+        healerContent.classList.add('hidden');
+        
+        // Active button styles
+        itBtn.className = 'px-6 py-3 rounded-xl font-display uppercase tracking-wider text-sm font-bold transition-all duration-300 bg-brand-dark text-white shadow-md';
+        healerBtn.className = 'px-6 py-3 rounded-xl font-display uppercase tracking-wider text-sm font-bold transition-all duration-300 text-slate-700 hover:text-brand-dark';
+      } else {
+        itContent.classList.add('hidden');
+        healerContent.classList.remove('hidden');
+        
+        // Active button styles
+        healerBtn.className = 'px-6 py-3 rounded-xl font-display uppercase tracking-wider text-sm font-bold transition-all duration-300 bg-brand-dark text-white shadow-md';
+        itBtn.className = 'px-6 py-3 rounded-xl font-display uppercase tracking-wider text-sm font-bold transition-all duration-300 text-slate-700 hover:text-brand-dark';
+      }
+    }
+  </script>
+<script data-purpose="portfolio-filter">
+    function filterPortfolio(category) {
+      const items = document.querySelectorAll('.portfolio-item');
+      const buttons = document.querySelectorAll('.filter-btn');
+
+      buttons.forEach(btn => {
+        if (btn.getAttribute('data-filter') === category) {
+          btn.className = 'filter-btn px-4 py-2 rounded-lg text-xs uppercase tracking-wider font-bold bg-brand-dark text-white';
+        } else {
+          btn.className = 'filter-btn px-4 py-2 rounded-lg text-xs uppercase tracking-wider font-bold bg-white text-slate-700 border border-slate-200 hover:border-brand-vibrant';
+        }
+      });
+
+      items.forEach(item => {
+        const itemCategory = item.getAttribute('data-category');
+        if (category === 'all' || itemCategory === category) {
+          item.classList.remove('hidden');
+        } else {
+          item.classList.add('hidden');
+        }
+      });
+    }
+
+    function handleFormSubmit(event) {
+      event.preventDefault();
+      const feedback = document.getElementById('form-feedback');
+      feedback.classList.remove('hidden');
+      setTimeout(() => {
+        event.target.reset();
+      }, 1000);
+    }
+  </script>
+<!-- END: InteractiveScripts -->
+
+
+</body></html>
