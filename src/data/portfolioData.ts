@@ -1,8 +1,8 @@
 export const HERO_VISUAL_URL =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuBNtXLCTX_mLXc8ujoXXWUMObx6A2NZ4gMGEb4otv50yEobTCpvLD7JUtdKuZmsOQiw53TYzwRWuzyab1ylq0Meaxcj-eof3e7x86O4MLr3x0c31GSDRtceXJbaORReXyjgLWz6rEWuY0z2QR_9ia6Of_IZOm7dD7r4jvQ1ptqIfpULChMUwUoWRtxCODUZWnGNSO9sJUVKw-bf0L1HLx5ngnxznK_qfjUGgWxZekrhcGLDtUYZk589JA';
+  '/assets/aistudio/Luxurious_Golden_Geometric_QR_Emblem_0b7f2e27.png';
 
 export const VCARD_QR_URL =
-  'https://lh3.googleusercontent.com/aida-public/AB6AXuBYyke3cQ8mlS_i6CKOe2Nc6pvXjZJIBmRYNYxS5t8ZqTvqmp88WyqRdDTu_r7chlpCtHZluToozGPYIGc_P8e8F7o8YFA-DIsqdbrU2pNw_NEOihE4o0_lmoyAlweAcTaaelLIX985M5g0cxWPQCoeGFtQjbkI-IcqIScTe-OB5e3FyGSGi9Ehy34YDi_EPcXWL1wNsedMOSLEDhYnbgsoOt3zQu3ROmCS4oVHWqWpceB3kjPdjaf0FA';
+  '/assets/aistudio/Luxurious_Golden_Geometric_QR_Emblem_0b7f2e27.png';
 
 export type PersonaMode = 'it' | 'healer';
 export type PortfolioCategory = 'all' | 'it' | 'healing';

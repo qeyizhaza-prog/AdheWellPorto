@@ -123,7 +123,7 @@ export function HeroSection({ lang, onConnectClick }: HeroSectionProps) {
                 alt="Adhe Weliington — IT Specialist & Holistic Healer"
                 referrerPolicy="no-referrer"
                 onError={() => setImageError(true)}
-                className="portrait-fade-mask object-cover object-top w-full h-full drop-shadow-xl select-none rounded-t-2xl"
+                className="portrait-fade-mask object-cover object-center w-full h-full drop-shadow-xl select-none rounded-t-2xl"
               />
             ) : (
               <div className="portrait-fade-mask w-full h-full rounded-t-2xl bg-gradient-to-b from-[#064E3B] via-[#043427] to-white flex flex-col items-center justify-center text-center p-8 border border-[#C5A059]/40">
